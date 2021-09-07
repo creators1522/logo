@@ -1,0 +1,17 @@
+.title {
+	&__char {
+		font-size: 28.8rem;
+		font-weight: 500;
+		line-height: 28.8rem;
+	}
+	&__char:nth-child(1) {
+	}
+	&__char:nth-child(2) {
+		margin-left: 45px;
+	}
+	&__char:nth-child(3) {
+		margin-left: -30px;
+	}
+	&__char:nth-child(4) {
+	}
+}

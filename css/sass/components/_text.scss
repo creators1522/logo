@@ -1,0 +1,13 @@
+.text {
+	font-size: 6.4rem;
+	max-width: 100%;
+	width: 1000px;
+	&--bold {
+		font-weight: bold;
+		font-size: 8.5rem;
+
+		@include mq(md) {
+			font-size: 9.6rem;
+		}
+	}
+}

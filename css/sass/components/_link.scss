@@ -1,0 +1,24 @@
+$icon-height: 20rem;
+.link {
+	display: flex;
+	align-items: center;
+	&__text {
+		font-size: 4.8rem;
+		margin-right: 30px;
+	}
+	&__icon-circle {
+		@include square($icon-height);
+		border-radius: 50%;
+		background: $main_color;
+		position: relative;
+	}
+	&__icon {
+		font-size: 15rem;
+		color: white;
+		position: absolute;
+		@include center;
+	}
+	&:hover .link__icon {
+		animation: link-arrow 1s infinite;
+	}
+}

@@ -1,0 +1,23 @@
+@keyframes link-arrow {
+	0% {
+		@include center;
+	}
+	50% {
+		left: 35%;
+	}
+	65% {
+		left: 65%;
+	}
+	100% {
+		@include center;
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

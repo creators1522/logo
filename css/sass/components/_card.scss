@@ -1,0 +1,41 @@
+.card {
+	position: relative;
+
+	border-radius: 50%;
+	background: $main-color;
+	@include square(370px);
+	@include mq(lg) {
+		@include square(900px);
+	}
+	&__inner {
+		position: absolute;
+		width: 220px;
+
+		@include center;
+		@include mq(lg) {
+			width: 550px;
+		}
+	}
+	&__img {
+		margin-bottom: 10px;
+		@include square(220px);
+
+		@include mq(lg) {
+			@include square(550px);
+		}
+	}
+	&__text {
+		width: 180px;
+		height: 28px;
+		padding: 10px;
+		margin: 0 auto;
+		@include mq(lg) {
+			width: 450px;
+			height: 70px;
+		}
+
+		background: white;
+
+		font-size: 2rem;
+	}
+}
