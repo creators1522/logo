@@ -1,16 +1,20 @@
 .circle-text {
-	@include square(450px);
-	border: solid 30px $main-color;
-
-	border-radius: 50%;
 	position: relative;
+
+	border: solid 30px $main-color;
+	border-radius: 50%;
+
+	@include square(450px);
 	@include mq(md) {
-		@include square(900px);
 		border: solid 60px $main-color;
+
+		@include square(900px);
 	}
 	&__text {
 		position: absolute;
-		@include center;
+
 		font-size: 4.8rem;
+
+		@include center;
 	}
 }

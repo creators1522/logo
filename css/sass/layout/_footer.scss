@@ -3,11 +3,12 @@
 
 	&__logo {
 		display: block;
+
 		margin: 0 30px 30px auto;
+
 		border-radius: 50%;
 
 		@include square(70px);
-
 		@include mq(md) {
 			@include square(200px);
 		}

@@ -1,8 +1,8 @@
 .circle {
-	// mix-blend-mode: difference;
-	border-radius: 50%;
 	position: absolute;
 	z-index: 0;
+
+	border-radius: 50%;
 	&--circle {
 		background: $main-color;
 	}
@@ -14,192 +14,233 @@
 	}
 	// Each Circle
 	&:nth-child(1) {
-		@include square(calc(4 / 10 * 750px));
-		left: calc(4 / 10 * -117px);
 		top: calc(4 / 10 * 156px);
+		left: calc(4 / 10 * -117px);
+
+		@include square(calc(4 / 10 * 750px));
 		@include mq(md) {
-			@include square(750px);
-			left: -117px;
 			top: 156px;
+			left: -117px;
+
+			@include square(750px);
 		}
 	}
 	&:nth-child(2) {
-		@include square(calc(4 / 10 * 573px));
-		left: calc(4 / 10 * 821px);
 		top: calc(4 / 10 * 333px);
+		left: calc(4 / 10 * 821px);
+
+		@include square(calc(4 / 10 * 573px));
 		@include mq(md) {
-			@include square(573px);
-			left: 821px;
 			top: 333px;
+			left: 821px;
+
+			@include square(573px);
 		}
 	}
 	&:nth-child(3) {
-		@include square(calc(4 / 10 * 200px));
-		left: calc(4 / 10 * 514px);
 		top: calc(4 / 10 * 997px);
+		left: calc(4 / 10 * 514px);
+
+		@include square(calc(4 / 10 * 200px));
 		@include mq(md) {
-			@include square(200px);
-			left: 514px;
 			top: 997px;
+			left: 514px;
+
 			border: 20px solid $main-color;
+
+			@include square(200px);
 		}
 	}
 	&:nth-child(4) {
-		@include square(calc(4 / 10 * 150px));
-		left: calc(4 / 10 * 871px);
 		top: calc(4 / 10 * 1097px);
+		left: calc(4 / 10 * 871px);
+
+		@include square(calc(4 / 10 * 150px));
 		@include mq(md) {
-			@include square(150px);
-			left: 871px;
 			top: 1097px;
+			left: 871px;
+
 			border: 20px solid $main-color;
+
+			@include square(150px);
 		}
 	}
 	&:nth-child(5) {
-		@include square(calc(4 / 10 * 350px));
-		left: calc(4 / 10 * 748px);
 		top: calc(4 / 10 * 1447px);
+		left: calc(4 / 10 * 748px);
+
+		@include square(calc(4 / 10 * 350px));
 		@include mq(md) {
-			@include square(350px);
-			left: 748px;
 			top: 1447px;
+			left: 748px;
+
 			border: 40px solid $main-color;
+
+			@include square(350px);
 		}
 	}
 	&:nth-child(6) {
-		@include square(calc(4 / 10 * 600px));
-		left: calc(4 / 10 * 1351.66px);
 		top: calc(4 / 10 * 2423.17px);
+		left: calc(4 / 10 * 1351.66px);
+
+		@include square(calc(4 / 10 * 600px));
 		@include mq(md) {
-			@include square(600px);
-			left: 1351.66px;
 			top: 2423.17px;
+			left: 1351.66px;
+
+			@include square(600px);
 		}
 	}
 	&:nth-child(7) {
-		@include square(calc(4 / 10 * 350px));
-		left: calc(4 / 10 * 754px);
 		top: calc(4 / 10 * 2952px);
+		left: calc(4 / 10 * 754px);
+
+		@include square(calc(4 / 10 * 350px));
 		@include mq(md) {
-			@include square(350px);
-			left: 754px;
 			top: 2952px;
+			left: 754px;
+
 			border: 30px solid $main-color;
+
+			@include square(350px);
 		}
 	}
 
 	&:nth-child(8) {
-		@include square(calc(4 / 10 * 900px));
-		left: calc(4 / 10 * 639px);
 		top: calc(4 / 10 * 3320px);
+		left: calc(4 / 10 * 639px);
+
+		@include square(calc(4 / 10 * 900px));
 		@include mq(md) {
-			@include square(900px);
-			left: 639px;
 			top: 3320px;
+			left: 639px;
+
+			@include square(900px);
 		}
 	}
 
 	&:nth-child(9) {
-		@include square(calc(4 / 10 * 300px));
-		left: calc(4 / 10 * 39px);
 		top: calc(4 / 10 * 4900px);
+		left: calc(4 / 10 * 39px);
+
+		@include square(calc(4 / 10 * 300px));
 		@include mq(md) {
-			@include square(300px);
-			left: 39px;
 			top: 4900px;
+			left: 39px;
+
 			border: 20px solid $main-color;
+
+			@include square(300px);
 		}
 	}
 
 	&:nth-child(10) {
-		@include square(calc(4 / 10 * 300px));
-		left: calc(4 / 10 * 339px);
 		top: calc(4 / 10 * 5692px);
+		left: calc(4 / 10 * 339px);
+
+		@include square(calc(4 / 10 * 300px));
 		@include mq(md) {
-			@include square(300px);
-			left: 339px;
 			top: 5692px;
+			left: 339px;
+
 			border: 20px solid $main-color;
+
+			@include square(300px);
 		}
 	}
 
 	//circle
 	&:nth-child(11) {
-		@include square(calc(4 / 10 * 700px));
-		left: calc(4 / 10 * 647px);
 		top: calc(4 / 10 * -75px);
+		left: calc(4 / 10 * 647px);
+
+		@include square(calc(4 / 10 * 700px));
 		@include mq(md) {
-			@include square(700px);
-			left: 647px;
 			top: -75px;
+			left: 647px;
+
+			@include square(700px);
 		}
 	}
 	&:nth-child(12) {
-		@include square(calc(4 / 10 * 100px));
-		left: calc(4 / 10 * 1054px);
 		top: calc(4 / 10 * 1323px);
+		left: calc(4 / 10 * 1054px);
+
+		@include square(calc(4 / 10 * 100px));
 		@include mq(md) {
-			@include square(100px);
-			left: 1054px;
 			top: 1323px;
+			left: 1054px;
+
+			@include square(100px);
 		}
 	}
 
 	&:nth-child(13) {
-		@include square(calc(4 / 10 * 150px));
-		left: calc(4 / 10 * 966px);
 		top: calc(4 / 10 * 2639px);
+		left: calc(4 / 10 * 966px);
+
+		@include square(calc(4 / 10 * 150px));
 		@include mq(md) {
-			@include square(150px);
-			left: 966px;
 			top: 2639px;
+			left: 966px;
+
+			@include square(150px);
 		}
 	}
 	&:nth-child(14) {
-		@include square(calc(4 / 10 * 740px));
-		left: calc(4 / 10 * 710px);
 		top: calc(4 / 10 * 4514px);
+		left: calc(4 / 10 * 710px);
+
+		@include square(calc(4 / 10 * 740px));
 		@include mq(md) {
-			@include square(740px);
-			left: 710px;
 			top: 4514px;
+			left: 710px;
+
+			@include square(740px);
 		}
 	}
 	&:nth-child(15) {
-		@include square(calc(4 / 10 * 150px));
-		left: calc(4 / 10 * 25px);
 		top: calc(4 / 10 * 5376px);
+		left: calc(4 / 10 * 25px);
+
+		@include square(calc(4 / 10 * 150px));
 		@include mq(md) {
-			@include square(150px);
-			left: 25px;
 			top: 5376px;
+			left: 25px;
+
+			@include square(150px);
 		}
 	}
 	// white
 	&:nth-child(16) {
-		@include square(calc(4 / 10 * 550px));
-		left: calc(4 / 10 * -157px);
 		top: calc(4 / 10 * 5594px);
+		left: calc(4 / 10 * -157px);
+
+		@include square(calc(4 / 10 * 550px));
 		@include mq(md) {
-			@include square(550px);
-			left: -157px;
 			top: 5594px;
+			left: -157px;
+
+			@include square(550px);
 		}
 	}
 
 	&:nth-child(17) {
-		@include square(calc(4 / 10 * 450px));
-		left: calc(4 / 10 * 793px);
 		top: calc(4 / 10 * 4424px);
+		left: calc(4 / 10 * 793px);
+
+		@include square(calc(4 / 10 * 450px));
 		@include mq(md) {
-			@include square(450px);
-			left: 793px;
 			top: 4424px;
+			left: 793px;
+
+			@include square(450px);
 		}
 	}
 }
 #luxy {
 	position: relative;
-	height: 100%;
+
 	width: 100%;
+	height: 100%;
 }

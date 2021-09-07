@@ -1,12 +1,13 @@
 .cursor {
 	position: fixed;
-	@include square(50px);
-	border-radius: 50%;
-	background: $main-color;
+
 	transition: 0.1s;
 	transform: translate(-50%, -50%);
-	// left: 0;
-	// top: 0;
 	pointer-events: none;
+
+	border-radius: 50%;
+	background: $main-color;
+
+	@include square(50px);
 	mix-blend-mode: difference;
 }

@@ -1,25 +1,30 @@
 $sub-title-height: 260px;
 $sub-title-height_md: 700px;
 .sub-title {
-	border-radius: 50%;
 	position: relative;
-	background: $main-color;
-	overflow: hidden;
-	@include square($sub-title-height);
 
+	overflow: hidden;
+
+	border-radius: 50%;
+	background: $main-color;
+
+	@include square($sub-title-height);
 	@include mq(md) {
 		@include square($sub-title-height_md);
 	}
 	&__text {
 		position: absolute;
-		@include center;
-		font-size: 18.8rem;
-		font-weight: 500;
-		line-height: 20rem;
+
 		transform: translate(-50%, -50%) rotate(-20deg);
 		transform-origin: center center;
 
 		border-bottom: 5px solid black;
+
+		font-size: 18.8rem;
+		font-weight: 500;
+		line-height: 20rem;
+
+		@include center;
 		@include mq(md) {
 			border-bottom: 20px solid black;
 		}

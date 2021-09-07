@@ -1,10 +1,11 @@
 .text {
-	font-size: 6.4rem;
-	max-width: 100%;
 	width: 1000px;
+	max-width: 100%;
+
+	font-size: 6.4rem;
 	&--bold {
-		font-weight: bold;
 		font-size: 8.5rem;
+		font-weight: bold;
 
 		@include mq(md) {
 			font-size: 9.6rem;

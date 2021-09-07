@@ -4,10 +4,12 @@
 		z-index: 0;
 	}
 	&__title {
+		position: relative;
+		z-index: 1;
+
 		margin-top: 150px;
+
 		text-align: center;
-		// position: relative;
-		// z-index: 1;
 	}
 	&__header__menu {
 		position: relative;
@@ -16,6 +18,7 @@
 	&__sub-title1 {
 		position: relative;
 		z-index: 1;
+
 		margin: 340px auto 0 0px;
 
 		@include mq(lg) {
@@ -23,24 +26,29 @@
 	}
 
 	&__sub-title2 {
-		@extend .home__sub-title1;
-		margin-top: 50px;
 		position: relative;
 		z-index: 1;
+
+		margin-top: 50px;
+
+		@extend .home__sub-title1;
 	}
 	&__text1 {
-		margin: 50px 0 0 0px;
 		position: relative;
 		z-index: 1;
+
+		margin: 50px 0 0 0px;
+
 		@include mq(md) {
 			margin: 50px 0 0 75px;
 		}
 	}
 	&__text2 {
 		position: relative;
+		z-index: 1;
+
 		margin: 20px 0 0 0px;
 
-		z-index: 1;
 		@include mq(md) {
 			margin: 20px 0 0 50px;
 		}
@@ -48,43 +56,48 @@
 	&__card1 {
 		position: relative;
 		z-index: 1;
+
 		margin: 50px auto 0 0px;
+
 		@include mq(lg) {
 		}
 	}
 	&__card2 {
 		position: relative;
 		z-index: 1;
+
 		margin: 50px 0px 0 auto;
+
 		@include mq(lg) {
 		}
 	}
 	&__circle-text {
-		margin: 0 auto 0 -130px;
 		position: relative;
 		z-index: 1;
+
+		margin: 0 auto 0 -130px;
 	}
 
 	&__link {
-		width: 550px;
-		text-align: right;
 		position: relative;
 		z-index: 1;
+
+		height: 100px;
 		margin: 100px 40px 0 auto;
 
 		@include mq(lg) {
-			margin: 730px 40px 0 auto;
+			margin: 730px 100px 0 auto;
 		}
 	}
 	&__circle-btn {
 		position: absolute;
-
 		z-index: 0;
-		left: -50%;
 		top: 3000px;
+		left: -50%;
+
 		@include mq(lg) {
-			left: -750px;
 			top: 6200px;
+			left: -750px;
 		}
 	}
 	&__footer {

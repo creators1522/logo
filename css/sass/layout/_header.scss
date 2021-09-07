@@ -1,71 +1,94 @@
 .header {
 	position: fixed;
-	right: 0;
+	z-index: 100;
 	top: 0;
-	transition: all 0.3s;
+	right: 0;
 
+	transition: all 0.3s;
 	&__menu-btn {
+		position: relative;
+
+		width: 200px;
+		margin: 0 20px 20px auto;
+
+		cursor: pointer;
+		text-align: right;
+
+		color: black;
+
 		font-size: 6.4rem;
 		font-weight: 500;
-		margin: 0 20px 20px auto;
-		width: 200px;
-		text-align: right;
-		cursor: pointer;
-		color: black;
-		position: relative;
 	}
 	&__menu {
 		display: none;
-		width: 350px;
-		padding: 50px;
-		background: $gray_200;
-		height: 100vh;
 
-		box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-		transform: translateX(100%);
+		width: 350px;
+		height: 100vh;
+		padding: 50px;
+
 		transition: all 0.3s;
+		transform: translateX(100%);
+
+		background: $gray_200;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
 	}
 	&__list {
 		transition: all 0.3s;
 		&--title {
-			font-size: 6rem;
 			margin-top: 50px;
-			border-radius: 50px;
-			color: white;
+
 			text-align: center;
+
+			color: white;
 			border: solid white 2px;
+			border-radius: 50px;
+
+			font-size: 6rem;
 		}
 		&--close {
-			font-size: 3rem;
 			margin-top: 50px;
-			color: white;
-			text-align: center;
-			border-bottom: solid white 2px;
+
 			cursor: pointer;
 			transition: 0.3s all;
+			text-align: center;
 
+			color: white;
+			border-bottom: solid white 2px;
+
+			font-size: 5rem;
+
+			@include mq(md) {
+				font-size: 3rem;
+			}
 			&:hover {
 				color: $main-color;
 			}
 		}
 	}
 	&__link {
+		position: relative;
+
+		display: block;
+
+		width: 100%;
+		margin: 50px 0;
+
 		color: white;
+
 		font-size: 6.4rem;
 		font-weight: 500;
-		display: block;
-		width: 100%;
-		position: relative;
-		margin: 50px 0;
 		&:after {
-			content: "";
 			position: absolute;
 			bottom: 0;
 			left: 0;
+
 			width: 0%;
 			height: 2px;
-			background: white;
+
+			content: "";
 			transition: 0.3s all;
+
+			background: white;
 		}
 		&:hover {
 			// color: $main-color;

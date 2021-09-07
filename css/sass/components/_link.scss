@@ -1,21 +1,38 @@
 $icon-height: 20rem;
 .link {
-	display: flex;
-	align-items: center;
+	display: block;
+
+	width: 250px;
+
+	@include mq(md) {
+		width: 800px;
+	}
 	&__text {
-		font-size: 4.8rem;
+		display: inline-block;
+
 		margin-right: 30px;
+
+		font-size: 4.8rem;
 	}
 	&__icon-circle {
-		@include square($icon-height);
+		position: relative;
+
+		display: inline-block;
+
+		transform: translateY(13px);
+
 		border-radius: 50%;
 		background: $main_color;
-		position: relative;
+
+		@include square($icon-height);
 	}
 	&__icon {
-		font-size: 15rem;
-		color: white;
 		position: absolute;
+
+		color: white;
+
+		font-size: 15rem;
+
 		@include center;
 	}
 	&:hover .link__icon {
